@@ -5,14 +5,14 @@ body {
     /* font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #fff;
     padding: 200px;
     padding-top: 5px;
     min-height: 100vh;
 }
 
 header {
-    color: #fff;
+    color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     margin: 30px;
     font-size: 1em;
@@ -42,7 +42,7 @@ nav a {
 }
 
 nav a:hover  {
-    background-color: #414141;
+    background-color: #ededed;
     padding: 10px;
     border-radius: 25px;
     margin: 20px;
@@ -121,12 +121,13 @@ nav a.active:hover {
 .hero{
     min-height: 80vh;
     border-radius: 40px;
-    background-color: #131315;
+    background-color: #F5F5F7;
     margin: 0px 15px 7.5px 15px;
     /* background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' id='SvgjsSvg1079' width='200' height='200' viewBox='0 0 512 512' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs'><path d='m256.002 242.913 210.412-121.43L256.002 0 45.586 121.483zm-15.053 26.073L30.534 147.557v242.96L240.949 512zm30.107 0V512l210.41-121.483v-242.96z' fill='rgba(255, 255, 255, 1)'></path></svg>"); */
     background-size: 50% 50%;
     background-repeat: no-repeat;
     padding: 20px;
+    color: #000;
 }
 
 .hero-content{
