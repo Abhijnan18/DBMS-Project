@@ -2,6 +2,7 @@ body {
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: 'Helvetica', sans-serif; */
     font-family: 'San Francisco', 'SF Pro Display', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    /* font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     margin: 0;
     padding: 0;
     background-color: #000;
@@ -32,18 +33,25 @@ nav {
 }
 
 nav a {
-    color: grey;
+    color: #fff;
     text-decoration: none;
     margin: 30px;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: text-shadow 0.5s ease-in-out; /* Add transition for smooth effect */
     font-weight: 700;
 }
 
-nav a:hover {
-    color: #fff;
+nav a:hover  {
+    background-color: #414141;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 20px;
+
     /* text-shadow: 0 0 20px #fff;  */
 }
+nav a.active:hover {
+    margin-right: 30px;
+  }
 
 
 .logo {
@@ -118,6 +126,14 @@ nav a:hover {
     /* background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' id='SvgjsSvg1079' width='200' height='200' viewBox='0 0 512 512' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs'><path d='m256.002 242.913 210.412-121.43L256.002 0 45.586 121.483zm-15.053 26.073L30.534 147.557v242.96L240.949 512zm30.107 0V512l210.41-121.483v-242.96z' fill='rgba(255, 255, 255, 1)'></path></svg>"); */
     background-size: 50% 50%;
     background-repeat: no-repeat;
+    padding: 20px;
+}
 
-
+.hero-content{
+    /* font-size: 30px; */
+    /* line-height: 52px; */
+    font-size: 1.9em;
+    line-height: 2.28em;
+    letter-spacing: -0.01em;
+    font-weight: 600;
 }
