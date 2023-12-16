@@ -59,64 +59,6 @@ nav a.active:hover {
     font-weight: bold;
     margin-left: 30px;
 }
-.grid-container{
-    display: grid;
-    gap: 15px;
-}
-
-.grid{
-    color: #fff;
-    background-color: green;
-}
-
-.item1 {
-    grid-column: 1;
-    grid-row: 1 ;
-
-
-
-}
-
-.item7 {
-    grid-column: 2/ span 2;
-    grid-row: 1;
-
-
-}
-
-
-.item2 {
-    grid-column: 3;
-    grid-row: 2 / span 2;
-
-
-
-}
-
-.item3 {
-    grid-column: 1;
-    grid-row: 2 / span 2;
-
-}
-
-.item5 {
-    grid-column: 2;
-    grid-row: 3;
-
-}
-
-.item6 {
-    grid-column: 1/ span 2;
-    grid-row: 4;
-
-
-}
-
-.item4 {
-    grid-column: 2;
-    grid-row: 2;
-
-}
 
 .hero{
     min-height: 50%;
@@ -143,3 +85,89 @@ nav a.active:hover {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+.explore {
+    background-color: #000;
+    color: #ededed;
+    padding: 10px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: text-shadow 0.9s ease-in-out;
+    /* Add transition for smooth effect */
+}
+
+.explore:hover {
+    background-color: #dcdcdc;
+    color: #000;
+    border: 2px solid #000;
+    margin-left: 28px;
+    margin-right: 28px;
+    /* Border color and thickness */
+}
+
+.center-image {
+    display: block;
+    margin: 20px auto;
+    /* Adjust the margin as needed */
+    max-width: 70%;
+    height: auto;
+    margin-top: 0px;
+}
+
+.hero-content {
+    color: #000;
+    text-align: center;
+}
+
+.active {
+    background-color: #dcdcdc;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.btn-hero {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #000;
+    color: #ededed;
+    padding: 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: text-shadow 0.9s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.btn-hero:hover {
+    background-color: #dcdcdc;
+    color: #000;
+    border: 2px solid #000;
+    margin-left: 28px;
+    margin-right: 28px;
+    /* Border color and thickness */
+}
+
+.highlight {
+    
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, #cccccc, #666666);
+    background: linear-gradient(to left, #e401e4, #0000FF);
+    /*background: linear-gradient(to right, #FFEB3B, #FFA500);*/
+    background: linear-gradient(45deg, #87CEEB, #3498db, #2c3e50);
+    background: linear-gradient(45deg,  #0397fa, #4aa1f9);
+    color: transparent;
+    -webkit-background-clip: text;
+    /* For Safari/Chrome/iOS */
+    background-clip: text;
+}
+
+.gradient-text::after {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #333; /* Set the fallback color */
+    z-index: -1;
+  }
