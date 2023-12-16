@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="hero.css">
     <style>
         .explore {
-            background-color: #ededed;
-            color: black;
+            background-color: #000;
+            color: #ededed;
             padding: 10px;
             border-radius: 25px;
             text-transform: uppercase;
-            transition: text-shadow 0.9s ease-in-out; /* Add transition for smooth effect */
+            transition: text-shadow 0.9s ease-in-out;
+            /* Add transition for smooth effect */
         }
 
         .explore:hover {
             background-color: #dcdcdc;
             color: #000;
-            border: 1px solid #dcdcdc;
-            margin-left: 29px;
-            margin-right: 29px;
+            border: 2px solid #000;
+            margin-left: 28px;
+            margin-right: 28px;
             /* Border color and thickness */
         }
 
@@ -30,8 +31,9 @@
             display: block;
             margin: 20px auto;
             /* Adjust the margin as needed */
-            max-width: 60%;
+            max-width: 70%;
             height: auto;
+            margin-top: 0px;
         }
 
         .hero-content {
@@ -44,7 +46,52 @@
             padding: 10px;
             border-radius: 25px;
         }
-       
+
+        .btn-hero {
+            font-size: 20px;
+            text-decoration: none;
+            background-color: #000;
+            color: #ededed;
+            padding: 20px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            transition: text-shadow 0.9s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .btn-hero:hover {
+            background-color: #dcdcdc;
+            color: #000;
+            border: 2px solid #000;
+            margin-left: 28px;
+            margin-right: 28px;
+            /* Border color and thickness */
+        }
+
+        .highlight {
+            
+            position: relative;
+            display: inline-block;
+            background: linear-gradient(to right, #cccccc, #666666);
+            background: linear-gradient(to left, #e401e4, #0000FF);
+            /*background: linear-gradient(to right, #FFEB3B, #FFA500);*/
+            background: linear-gradient(45deg, #87CEEB, #3498db, #2c3e50);
+            background: linear-gradient(45deg,  #0397fa, #4aa1f9);
+            color: transparent;
+            -webkit-background-clip: text;
+            /* For Safari/Chrome/iOS */
+            background-clip: text;
+        }
+
+        .gradient-text::after {
+            content: attr(data-text);
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #333; /* Set the fallback color */
+            z-index: -1;
+          }
     </style>
 </head>
 
@@ -68,12 +115,14 @@
         <div class="hero-container">
             <img src="Untitled-3.png" alt="Hero Image" class="center-image">
             <div class="hero-content">
-                <h1>Attendify <br>Revolutionizing Academia, <br>One Click at a Time!</h1>
+                <h1><span class="highlight">Attendify</span> <br>Revolutionizing <span class="highlight"> Academia</span>, <br>One  <span class="highlight">Click</span> at a Time!
+                </h1>
+                <a href="#" class="btn-hero">Explore</a>
             </div>
         </div>
     </section>
 
-<!-- 
+    <!-- 
     <div class="grid-container">
         <div class="grid item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet natus harum
             praesentium, quisquam magni nihil optio dolor quidem non earum esse sint voluptatum et dignissimos mollitia
