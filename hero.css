@@ -93,7 +93,7 @@ nav a.active:hover {
     padding: 10px;
     border-radius: 25px;
     text-transform: uppercase;
-    transition: text-shadow 0.9s ease-in-out;
+
     /* Add transition for smooth effect */
 }
 
@@ -136,6 +136,7 @@ nav a.active:hover {
     text-transform: uppercase;
     transition: text-shadow 0.9s ease-in-out;
     margin-bottom: 20px;
+    border: 2px solid #000;
 }
 
 .btn-hero:hover {
@@ -155,10 +156,22 @@ nav a.active:hover {
     background: linear-gradient(to left, #e401e4, #0000FF);
     /*background: linear-gradient(to right, #FFEB3B, #FFA500);*/
     background: linear-gradient(45deg, #87CEEB, #3498db, #2c3e50);
-    background: linear-gradient(45deg,  #0397fa, #4aa1f9);
+    background: linear-gradient(45deg,  #0397fa, #017efa);
     color: transparent;
     -webkit-background-clip: text;
     /* For Safari/Chrome/iOS */
+    background-clip: text;
+    font-weight: 700;
+}
+.highlight2 {
+    
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, #cccccc, #666666);
+    background: linear-gradient(to left, #fc516b, #ff0d00);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
     background-clip: text;
 }
 
@@ -169,5 +182,69 @@ nav a.active:hover {
     top: 0;
     left: 0;
     color: #333; /* Set the fallback color */
-    z-index: -1;
+    z-index: -1
   }
+
+  /* Introduction section */
+  .intro{
+    min-height: 30vh;
+    background-color: #000;
+    color: #F5F5F7;
+    margin: 15px;
+    padding: 60px;
+    border-radius: 40px;
+    font-size: 2em;
+    font-weight: 500;
+    text-align:start;
+    line-height: 1.5em;
+    letter-spacing: -0.5px;
+  }
+
+  .intro p{
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .intro a{
+    margin: 30px;
+  }
+  
+
+  .grid-container {
+    display: grid;
+    gap: 15px;
+    /* padding: 10px; */
+  }
+
+  .grid-item {
+    background-color: #F5F5F7;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    border-radius: 40px;
+  }
+  
+  .item1 {
+    grid-column: 1 ;
+    grid-row: 1/ span 2 ;
+    min-height: 50vh;
+
+  }
+  
+  .item2 {
+    grid-column: 2;
+    grid-row: 1 ;
+    min-height: 20vh;
+  }
+
+  .item3 {
+    grid-column: 2;
+    grid-row: 2 ;
+  }
+
+  .feature2{
+    margin: 15px;
+  }
+
+  
+  
