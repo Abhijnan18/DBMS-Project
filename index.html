@@ -62,12 +62,48 @@
         <div class="grid-container">
             <div class="grid-item item1">
                 <h1>Easy Upload</h1>
-                1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, 
+                <div class="video-player">
+                <video id="scroll-video" muted>
+                    <source src="Upload.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             </div>
             <div class="grid-item item2">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ipsa.</div>
             <div class="grid-item item3">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ipsa.</div>
         </div>
     </section>
+
+
+    <script>
+        // Function to check if an element is in the viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to handle scroll events
+        function handleScroll() {
+            const video = document.getElementById('scroll-video');
+
+            if (isElementInViewport(video)) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        // Attach the handleScroll function to the scroll event
+        window.addEventListener('scroll', handleScroll);
+
+        // Trigger the handleScroll function initially to check the initial state
+        handleScroll();
+    </script>
 
 
 </body>
