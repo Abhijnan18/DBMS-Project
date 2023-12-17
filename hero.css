@@ -217,28 +217,63 @@ nav a.active:hover {
   .grid-item {
     background-color: #F5F5F7;
     text-align: center;
-    padding: 50px;
+    padding: 40px;
     font-size: 30px;
     border-radius: 40px;
   }
   
   .item1 {
     grid-column: 1 / span 2;
-    grid-row: 1/ span 4 ;
-    min-height: 75vh;
-    
+    grid-row: 1 /span 2;
+    min-height: 50vh;
+  }
 
+  .item1 h1{
+    margin-top: 0;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #00ff44, #0a952a);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
   }
   
   .item2 {
-    grid-column: 3;
+    grid-column: 3 ;
     grid-row: 1 / span 2;
+    min-height: 25vh;
   }
 
-  .item3 {
-    grid-column: 3;
-    grid-row: 3/span 2 ;
+  .item2 h1{
+    margin-top: 0;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #e401e4, #0397fa);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
   }
+
+  .grid-item.item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item.item2 img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    margin-bottom: 50px;
+
+}
+
+
+
+  
 
   .feature2{
     margin: 20px;
@@ -247,10 +282,10 @@ nav a.active:hover {
   .video-player {
     text-align: center;
     overflow: hidden;
-    border-radius: 40px; /* Add border radius */
-    width: 500px; /* Set the width to make it square */
-    height: 500px; /* Set the height to make it square */
-    border: 0.001px solid #000;
+    border-radius: 20px; /* Add border radius */
+    width: 450px; /* Set the width to make it square */
+    height: 450px; /* Set the height to make it square */
+    /* border: 0.001px solid #000; */
 
 }
 
