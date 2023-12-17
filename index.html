@@ -21,7 +21,7 @@
             <nav>
                 <a href="#" class="active">Home</a>
                 <!-- <a href="#">About</a> -->
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
                 <a href="#" class="explore">Learn More</a>
             </nav>
         </div>
@@ -138,6 +138,16 @@
 
         // Trigger the handleScroll function initially to check the initial state
         handleScroll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@17.0.1/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize smooth-scroll
+            const scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 800,
+                easing: 'easeInOutQuad'
+            });
+        });
     </script>
 
 
